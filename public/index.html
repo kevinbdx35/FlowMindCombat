@@ -1,44 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!-- Métadonnées de base -->
     <meta charset="utf-8" />
+    
+    <!-- Favicons pour tous les navigateurs -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <!-- Configuration responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Couleur du thème pour les navigateurs mobiles -->
     <meta name="theme-color" content="#d32f2f" />
+    
+    <!-- Métadonnées SEO optimisées -->
     <meta
       name="description"
-      content="FlowMindCombat - Unlock your fighter potential with mental routines, discipline and combat training for MMA, BJJ, Luta Livre and Boxing"
+      content="FlowMindCombat - Débloque ton potentiel de combattant avec des routines mentales, discipline et entraînement pour MMA, BJJ, Luta Livre et Boxe. Contenu exclusif sur Patreon."
     />
+    <meta name="keywords" content="MMA, BJJ, Jiu-Jitsu, Luta Livre, Boxe, arts martiaux, entraînement mental, discipline, combat, fitness, Patreon, FlowMindCombat" />
+    <meta name="author" content="FlowMindCombat" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French, English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Langues alternatives -->
+    <link rel="alternate" hreflang="fr" href="https://kevinbdx35.github.io/FlowMindCombat/" />
+    <link rel="alternate" hreflang="en" href="https://kevinbdx35.github.io/FlowMindCombat/" />
+    <link rel="alternate" hreflang="x-default" href="https://kevinbdx35.github.io/FlowMindCombat/" />
+    
+    <!-- Open Graph pour Facebook/LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FlowMindCombat - Débloque ton potentiel de combattant" />
+    <meta property="og:description" content="Routines mentales, discipline et entraînement pour MMA, BJJ, Luta Livre et Boxe. Rejoins-nous sur Patreon pour du contenu exclusif." />
+    <meta property="og:url" content="https://kevinbdx35.github.io/FlowMindCombat/" />
+    <meta property="og:site_name" content="FlowMindCombat" />
+    <meta property="og:image" content="https://kevinbdx35.github.io/FlowMindCombat/favicon.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FlowMindCombat - Débloque ton potentiel de combattant" />
+    <meta name="twitter:description" content="Routines mentales, discipline et entraînement pour MMA, BJJ, Luta Livre et Boxe." />
+    <meta name="twitter:image" content="https://kevinbdx35.github.io/FlowMindCombat/favicon.svg" />
+    <meta name="twitter:site" content="@FlowMindCombat" />
+    <meta name="twitter:creator" content="@FlowMindCombat" />
+    
+    <!-- Liens canoniques -->
+    <link rel="canonical" href="https://kevinbdx35.github.io/FlowMindCombat/" />
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://www.patreon.com" />
+    
+    <!-- Icône pour iOS -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    
+    <!-- Manifest pour PWA -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>FlowMindCombat - Unlock Your Fighter Potential</title>
+    
+    <!-- Titre de la page -->
+    <title>FlowMindCombat - Débloque ton potentiel de combattant | MMA, BJJ, Boxe</title>
   </head>
-  <body>
+  <body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Message pour les navigateurs sans JavaScript -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Point de montage de l'application React -->
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    
+    <!-- Données structurées JSON-LD pour le SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FlowMindCombat",
+      "url": "https://kevinbdx35.github.io/FlowMindCombat/",
+      "logo": "https://kevinbdx35.github.io/FlowMindCombat/favicon.svg",
+      "description": "Plateforme dédiée à l'entraînement mental et physique pour les arts martiaux. Spécialisée en MMA, BJJ, Luta Livre et Boxe.",
+      "sameAs": [
+        "https://www.patreon.com/c/FlowMindCombat",
+        "https://youtube.com/@FlowMindCombat"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://www.patreon.com/c/FlowMindCombat"
+      },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "MMA",
+        "BJJ",
+        "Jiu-Jitsu Brésilien",
+        "Luta Livre",
+        "Boxe",
+        "Arts martiaux",
+        "Entraînement mental",
+        "Discipline sportive"
+      ]
+    }
+    </script>
   </body>
 </html>
