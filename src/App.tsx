@@ -84,10 +84,19 @@ const translations = {
 
 function App() {
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = translations[language];
 
   const toggleLanguage = () => {
     setLanguage(language === 'fr' ? 'en' : 'fr');
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -97,17 +106,38 @@ function App() {
           <div className="logo">
             <h1>FlowMindCombat</h1>
           </div>
-          <ul className="nav-links">
-            <li><a href="#home">{t.nav.home}</a></li>
-            <li><a href="#about">{t.nav.about}</a></li>
-            <li><a href="#content">{t.nav.content}</a></li>
-            <li><a href="#patreon" className="patreon-btn">{t.nav.patreon}</a></li>
-            <li>
-              <button onClick={toggleLanguage} className="lang-btn">
-                {language === 'fr' ? '🇺🇸 EN' : '🇫🇷 FR'}
-              </button>
-            </li>
-          </ul>
+          
+          <div className="desktop-nav">
+            <ul className="nav-links">
+              <li><a href="#home" onClick={closeMobileMenu}>{t.nav.home}</a></li>
+              <li><a href="#about" onClick={closeMobileMenu}>{t.nav.about}</a></li>
+              <li><a href="#content" onClick={closeMobileMenu}>{t.nav.content}</a></li>
+              <li><a href="#patreon" className="patreon-btn" onClick={closeMobileMenu}>{t.nav.patreon}</a></li>
+            </ul>
+            <button onClick={toggleLanguage} className="lang-btn">
+              {language === 'fr' ? 'EN' : 'FR'}
+            </button>
+          </div>
+
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div className={`mobile-nav ${mobileMenuOpen ? 'active' : ''}`}>
+            <ul className="mobile-nav-links">
+              <li><a href="#home" onClick={closeMobileMenu}>{t.nav.home}</a></li>
+              <li><a href="#about" onClick={closeMobileMenu}>{t.nav.about}</a></li>
+              <li><a href="#content" onClick={closeMobileMenu}>{t.nav.content}</a></li>
+              <li><a href="#patreon" className="patreon-btn" onClick={closeMobileMenu}>{t.nav.patreon}</a></li>
+              <li>
+                <button onClick={toggleLanguage} className="lang-btn mobile">
+                  {language === 'fr' ? 'English' : 'Français'}
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
