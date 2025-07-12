@@ -72,7 +72,16 @@ Le site utilise une palette de couleurs inspirée des arts martiaux :
 
 ## 📦 Déploiement
 
-Le déploiement se fait automatiquement via GitHub Actions à chaque push sur la branche `main`. Le site est publié sur GitHub Pages via la branche `gh-pages`.
+Le déploiement se fait automatiquement via GitHub Actions à chaque push sur la branche `main`. 
+
+### Configuration GitHub Pages
+
+1. Aller dans les **Settings** du repository
+2. Section **Pages** 
+3. Source : **GitHub Actions**
+4. Le workflow se déclenche automatiquement sur chaque push
+
+Le site sera disponible sur l'URL configurée dans GitHub Pages.
 
 ## 🔗 Liens
 
