@@ -1,16 +1,20 @@
+/* Reset CSS pour une base propre */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styles de base de l'application */
 .App {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
 }
 
-/* Header & Navigation */
+/* ===== EN-TÊTE ET NAVIGATION ===== */
+
+/* Header fixe avec dégradé martial arts */
 .header {
   background: linear-gradient(135deg, #1a1a1a 0%, #d32f2f 50%, #000000 100%);
   padding: 1rem 0;
@@ -21,6 +25,7 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
+/* Container de navigation avec alignement */
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
@@ -31,18 +36,21 @@
   position: relative;
 }
 
+/* Navigation desktop avec flexbox */
 .desktop-nav {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
+/* Styling du logo */
 .logo h1 {
   color: white;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
+/* Liste des liens de navigation */
 .nav-links {
   display: flex;
   list-style: none;
@@ -50,6 +58,7 @@
   align-items: center;
 }
 
+/* Styling des liens avec animations */
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -58,11 +67,13 @@
   border-radius: 25px;
 }
 
+/* Effet hover sur les liens */
 .nav-links a:hover {
   background: rgba(255,255,255,0.1);
   transform: translateY(-2px);
 }
 
+/* Bouton Patreon avec styling spécial */
 .patreon-btn {
   background: #ff424d;
   padding: 0.5rem 1rem;
@@ -70,11 +81,13 @@
   font-weight: bold;
 }
 
+/* Hover effect pour le bouton Patreon */
 .patreon-btn:hover {
   background: #e63946;
   color: white !important;
 }
 
+/* Bouton de changement de langue */
 .lang-btn {
   background: transparent;
   border: 2px solid white;
@@ -89,6 +102,7 @@
   letter-spacing: 1px;
 }
 
+/* Effet hover du bouton langue */
 .lang-btn:hover {
   background: white;
   color: #d32f2f;
@@ -96,6 +110,7 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+/* Version mobile du bouton langue */
 .lang-btn.mobile {
   background: #d32f2f;
   border: 2px solid #d32f2f;
@@ -105,6 +120,7 @@
   letter-spacing: normal;
 }
 
+/* Hover mobile du bouton langue */
 .lang-btn.mobile:hover {
   background: #b71c1c;
   border-color: #b71c1c;
@@ -112,7 +128,9 @@
   transform: none;
 }
 
-/* Hero Section */
+/* ===== SECTION HÉRO ===== */
+
+/* Section héro pleine hauteur avec dégradé */
 .hero {
   background: linear-gradient(135deg, #1a1a1a 0%, #d32f2f 50%, #000000 100%);
   min-height: 100vh;
@@ -124,12 +142,14 @@
   padding-top: 80px;
 }
 
+/* Container du contenu héro */
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
+/* Titre principal avec ombre */
 .hero-content h2 {
   font-size: 3.2rem;
   margin-bottom: 1.5rem;
@@ -138,6 +158,7 @@
   line-height: 1.1;
 }
 
+/* Sous-titre avec ombre légère */
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 2.5rem;
@@ -146,6 +167,7 @@
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
+/* Bouton call-to-action principal */
 .cta-button {
   background: linear-gradient(45deg, #ff424d, #e63946);
   color: white;
@@ -161,13 +183,16 @@
   box-shadow: 0 4px 15px rgba(255, 66, 77, 0.3);
 }
 
+/* Effet hover du CTA avec élévation */
 .cta-button:hover {
   background: linear-gradient(45deg, #e63946, #d32f2f);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 66, 77, 0.4);
 }
 
-/* Sections */
+/* ===== SECTIONS PRINCIPALES ===== */
+
+/* Styling commun des sections about et content */
 .about, .content {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -175,12 +200,14 @@
   text-align: center;
 }
 
+/* Titres des sections */
 .about h2, .content h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #333;
 }
 
+/* Paragraphes des sections */
 .about p, .content p {
   font-size: 1.1rem;
   max-width: 800px;
@@ -188,7 +215,9 @@
   color: #666;
 }
 
-/* Footer */
+/* ===== PIED DE PAGE ===== */
+
+/* Footer simple avec background sombre */
 footer {
   background: #333;
   color: white;
@@ -196,7 +225,9 @@ footer {
   padding: 2rem;
 }
 
-/* Content Grid */
+/* ===== GRILLE DE CONTENU ===== */
+
+/* Grille responsive pour les cartes de contenu */
 .content-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -204,6 +235,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Cartes de contenu avec gradient et bordures */
 .content-card {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   padding: 2.5rem;
@@ -214,6 +246,7 @@ footer {
   overflow: hidden;
 }
 
+/* Bordure supérieure décorative avec gradient */
 .content-card::before {
   content: '';
   position: absolute;
@@ -224,12 +257,14 @@ footer {
   background: linear-gradient(90deg, #d32f2f, #ff424d);
 }
 
+/* Effet hover avec élévation et ombre */
 .content-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(211, 47, 47, 0.15);
   border-left-color: #ff424d;
 }
 
+/* Titres des cartes */
 .content-card h3 {
   color: #d32f2f;
   margin-bottom: 1.2rem;
@@ -237,12 +272,15 @@ footer {
   font-weight: 700;
 }
 
+/* Texte des cartes */
 .content-card p {
   line-height: 1.6;
   color: #555;
 }
 
-/* Mobile Navigation */
+/* ===== NAVIGATION MOBILE ===== */
+
+/* Bouton hamburger (caché par défaut) */
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
@@ -252,6 +290,7 @@ footer {
   padding: 0.5rem;
 }
 
+/* Barres du menu hamburger */
 .mobile-menu-btn span {
   width: 25px;
   height: 3px;
@@ -261,6 +300,7 @@ footer {
   border-radius: 2px;
 }
 
+/* Menu mobile déroulant */
 .mobile-nav {
   display: none;
   position: absolute;
@@ -272,20 +312,24 @@ footer {
   border-radius: 0 0 15px 15px;
 }
 
+/* Affichage du menu mobile quand actif */
 .mobile-nav.active {
   display: block;
 }
 
+/* Liste des liens mobile */
 .mobile-nav-links {
   list-style: none;
   padding: 2rem;
   margin: 0;
 }
 
+/* Espacement des éléments de menu mobile */
 .mobile-nav-links li {
   margin: 1rem 0;
 }
 
+/* Styling des liens mobile */
 .mobile-nav-links a {
   color: white;
   text-decoration: none;
@@ -297,40 +341,50 @@ footer {
   text-align: center;
 }
 
+/* Hover effect pour les liens mobile */
 .mobile-nav-links a:hover {
   background: rgba(255,255,255,0.1);
 }
 
-/* Responsive */
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Adaptations pour tablettes et mobiles */
 @media (max-width: 768px) {
+  /* Masquer la navigation desktop sur mobile */
   .desktop-nav {
     display: none;
   }
   
+  /* Afficher le bouton hamburger sur mobile */
   .mobile-menu-btn {
     display: flex;
   }
   
+  /* Réduire la taille du titre héro sur mobile */
   .hero-content h2 {
     font-size: 2.2rem;
     line-height: 1.2;
   }
   
+  /* Ajuster le sous-titre héro pour mobile */
   .hero-content p {
     font-size: 1.1rem;
     line-height: 1.5;
     padding: 0 1rem;
   }
   
+  /* Grille single-column sur mobile */
   .content-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   
+  /* Réduire le padding des sections sur mobile */
   .about, .content {
     padding: 3rem 1.5rem;
   }
   
+  /* Réduire le padding de la navbar sur mobile */
   .navbar {
     padding: 0 1rem;
   }
