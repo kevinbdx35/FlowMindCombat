@@ -37,10 +37,15 @@ jobs:
       env:
         CI: false
 
+    - name: Copy build to root
+      run: |
+        cp -r build/* .
+        cp build/index.html ./index.html
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./build
+        path: .
 
   deploy:
     environment:
