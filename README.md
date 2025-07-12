@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# FlowMindCombat Showcase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site web officiel de FlowMindCombat, une plateforme dédiée à l'entraînement mental et physique pour les arts martiaux.
 
-## Available Scripts
+## 🥊 À propos
 
-In the project directory, you can run:
+FlowMindCombat aide les combattants à développer leur potentiel grâce à des routines mentales, de la discipline et des techniques d'entraînement spécialisées pour :
 
-### `npm start`
+- **MMA** (Arts Martiaux Mixtes)
+- **BJJ** (Jiu-Jitsu Brésilien)
+- **Luta Livre**
+- **Boxe**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🌐 Site web
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Le site est disponible en français et anglais avec basculement dynamique des langues.
 
-### `npm test`
+**URL de production :** https://flowmindcombat.github.io/flowmind-showcase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Développement
 
-### `npm run build`
+### Prérequis
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 18+
+- npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Cloner le repository
+git clone https://github.com/FlowMindCombat/flowmind-showcase.git
+cd flowmind-showcase
 
-### `npm run eject`
+# Installer les dépendances
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Lancer en mode développement
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Le site sera accessible sur http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build de production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+## 🔧 Technologies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React 19** avec TypeScript
+- **CSS3** avec gradients et animations
+- **GitHub Pages** pour l'hébergement
+- **GitHub Actions** pour le déploiement automatique
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📱 Fonctionnalités
+
+- ✅ Design responsive (mobile-first)
+- ✅ Navigation bilingue (FR/EN)
+- ✅ Menu mobile avec hamburger
+- ✅ Animations et transitions fluides
+- ✅ Favicon personnalisé
+- ✅ SEO optimisé
+- ✅ Déploiement automatique
+
+## 🎨 Design
+
+Le site utilise une palette de couleurs inspirée des arts martiaux :
+- Noir profond (#1a1a1a)
+- Rouge martial (#d32f2f)
+- Gradients dynamiques
+
+## 📦 Déploiement
+
+Le déploiement se fait automatiquement via GitHub Actions à chaque push sur la branche `main`. Le site est publié sur GitHub Pages via la branche `gh-pages`.
+
+## 🔗 Liens
+
+- [Patreon FlowMindCombat](https://www.patreon.com/c/FlowMindCombat)
+- [YouTube](https://youtube.com/@FlowMindCombat)
+
+## 📄 Licence
+
+© 2025 FlowMindCombat. Tous droits réservés.
