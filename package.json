@@ -2,7 +2,7 @@
   "name": "flowmind-showcase",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://flowmindcombat.github.io/flowmind-showcase",
+  "homepage": "https://kevinbdx35.github.io/FlowMindCombat",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
