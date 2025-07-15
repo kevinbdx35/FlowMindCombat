@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FlowMindCombat/static/css/main.68c86e38.css",
+    "main.js": "/FlowMindCombat/static/js/main.a6fa215b.js",
+    "static/js/453.b4476be1.chunk.js": "/FlowMindCombat/static/js/453.b4476be1.chunk.js",
+    "index.html": "/FlowMindCombat/index.html",
+    "main.68c86e38.css.map": "/FlowMindCombat/static/css/main.68c86e38.css.map",
+    "main.a6fa215b.js.map": "/FlowMindCombat/static/js/main.a6fa215b.js.map",
+    "453.b4476be1.chunk.js.map": "/FlowMindCombat/static/js/453.b4476be1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68c86e38.css",
+    "static/js/main.a6fa215b.js"
+  ]
+}

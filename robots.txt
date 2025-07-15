@@ -1,0 +1,36 @@
+# Robots.txt pour FlowMindCombat
+# Site web: https://kevinbdx35.github.io/FlowMindCombat/
+
+User-agent: *
+Allow: /
+
+# Fichiers et dossiers à exclure de l'indexation
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: *.map$
+
+# Sitemap pour les moteurs de recherche
+Sitemap: https://kevinbdx35.github.io/FlowMindCombat/sitemap.xml
+
+# Règles spécifiques pour les principaux crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Bloquer les bots indésirables
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
