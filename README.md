@@ -2,6 +2,8 @@
 
 Site web officiel de FlowMindCombat, une plateforme dédiée à l'entraînement mental et physique pour les arts martiaux.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W61I0YBJ)
+
 ## 🥊 À propos
 
 FlowMindCombat aide les combattants à développer leur potentiel grâce à des routines mentales, de la discipline et des techniques d'entraînement spécialisées pour :
